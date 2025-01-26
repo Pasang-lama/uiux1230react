@@ -43,7 +43,6 @@ function BannerSlider() {
             subheading: "new Men Collection",
         }
     ]
-
     return (
         <Carousel responsive={responsive}   swipeable={true}   draggable={true}>
             {
