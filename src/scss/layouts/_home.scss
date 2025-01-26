@@ -1,0 +1,37 @@
+.banner-items{
+    position: relative;
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0, -50%);
+        color: white;
+        .banner-heading{
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .banner-subheading{
+            font-size: 60px;
+            font-weight: 600;
+            font-family: $tertiary-font;
+        }
+        a{
+            background-color: $primary-color;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+.react-multi-carousel-item  {
+    &:nth-child(even){
+        .banner-content{
+            right: 10%;
+            text-align: end;
+            transform: translate(0%, -50%);
+        }
+    }
+}
