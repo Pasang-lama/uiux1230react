@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.svg"
+import { Link } from "react-router";
 
 function Header() {
     return (
@@ -12,8 +13,8 @@ function Header() {
           <ul className="d-flex gap-2 mb-0">
             <li><a href="">My account </a></li>
             <li><a href="">Cart </a></li>
-            <li><a href="">Our location </a></li>
-            <li><a href="">Contact us</a></li>
+            <li><Link to={"/location"}>Our Location</Link></li>
+            <li><Link to={"/contact"}>Contact us</Link></li>
           </ul>
           </div>
        
@@ -26,7 +27,7 @@ function Header() {
           <li><a href="">Pages</a></li>
           <li><a href="">Features</a></li>
         </ul>
-        <a href=""><img src={Logo} alt="" /></a>
+        <Link to={"/"}><img src={Logo} alt="" className="logo" /> </Link>
 
         <div className="right">
           <a href="">Login / Register</a>
