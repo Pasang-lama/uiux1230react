@@ -17,12 +17,11 @@ function Header() {
             <li><Link to={"/contact"}>Contact us</Link></li>
           </ul>
           </div>
-       
       </div>
       <div className="navigation-bar container d-flex justify-content-between align-items-center">
         <ul className="d-flex gap-3">
           <li><a href="">Home</a></li>
-          <li><a href="">Shop</a></li>
+          <li><Link to={"/product"}>Product</Link></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Pages</a></li>
           <li><a href="">Features</a></li>
